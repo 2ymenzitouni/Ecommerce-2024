@@ -1,0 +1,51 @@
+
+footer{
+    background-color: rgb(37, 37, 37);
+    color: white;
+    margin-top: 30px;
+}
+footer .roww-1{
+    display: grid;
+    grid-template-columns:  repeat(auto-fill , minmax(250px,auto));
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 60px;
+}
+footer .roww-1 a{
+    color: rgb(136, 136, 136);
+    display: inline-block;
+    padding-top:5px ;
+}
+
+footer .roww-1 h3{
+    padding-bottom: 15px;
+}
+footer .roww-1 .column-1 .logo{
+    font-size: 30px;
+}
+footer .roww-1 .column-4 .app{
+    display: flex;
+    align-items: center;
+    gap:0px 10px ;
+}
+footer .roww-1 .column-4 .app .qr{
+    height: 120px;
+}
+footer .roww-1 .column-4 .app .qr img{
+    height: 100%;
+}
+footer .roww-1 .column-4 .app .downloads{
+    width: 150px;
+}
+footer .roww-1 .column-4 .app .downloads img{
+    width: 100%;
+}
+footer .roww-2{
+    text-align: center;
+    background-color: #9b9b9b;
+    padding: 10px 0 !important;
+}
+footer .roww-2 p{
+    text-wrap: wrap;
+    margin-bottom: 0;
+}
