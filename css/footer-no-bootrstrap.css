@@ -43,8 +43,9 @@ footer .roww-1 .column-4 .app .downloads img{
 footer .roww-2{
     text-align: center;
     background-color: #9b9b9b;
-    padding: 20px 0;
+    padding: 10px 0 !important;
 }
 footer .roww-2 p{
     text-wrap: wrap;
+    margin-bottom: 0;
 }

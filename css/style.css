@@ -206,7 +206,7 @@ header .row-2 .contact a {
 .main .landing .pic-text p{
     margin-top: 30px;
     font-size: clamp(4vw, 2rem, 3rem);
-    background-color: #ffffff96;
+    /* background-color: #ffffff96; */
     padding: 0 20px;
     border-radius: 20px;
 }
@@ -229,19 +229,27 @@ header .row-2 .contact a {
     font-weight: bold;
     margin-top: 10px;
     box-shadow: 4px 4px 0px #298D29;
+    transition: transform .5s;
 }
+.main .landing .pic-text a:hover{
+    transform: scale(1.1);
+}
+
 .main .circles{
-    display: flex;
+    display: grid;
     /* flex-direction: column; */
-    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fill,200px);
     justify-content: center;
-    gap:  10px 100px;
+    gap:  20px 60px;
     margin-top: 60px;
     text-align: center;
 
 }
 .main .circles .circle{
-    text-align: center; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 }
 .main .circles .circle .image{
     display: flex;
@@ -575,7 +583,7 @@ footer .row-1 .col-4 .app .downloads img{
 footer .row-2{
     text-align: center;
     background-color: #9b9b9b;
-    padding: 20px 0;
+    padding: 10px 0 !important;
 }
 footer .row-2 p{
     text-wrap: wrap;
