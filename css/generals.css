@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    /* border: 1px solid; */
+}
+:root{
+    --box-shadow :rgba(175, 175, 175, 0.5);
+    --main-color : #47B9C1;
+    --border-bottom : #0f485b20;
+}
+body{
+    font-family:"Parkinsans",'cocomat' !important; 
+    /* background-color: #ffffff; */
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.colors{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0 10px;
+    position: fixed;
+    right: 15px;
+    z-index: 11111111111;
+    /* margin-top: 20px; */
+}
+.colors span{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin: 5px 0;
+    border: 2px solid #fff;
+}
+.colors span:nth-child(1){
+    background-color: #FFD066;
+}
+.colors span:nth-child(2){
+    background-color: #F6A7AA;
+}
+.colors span:nth-child(3){
+    background-color:#47B9C1;
+}
+.colors span:nth-child(4){
+    background-color: brown;
+}
+.rating i.fa-solid{
+    color: #FFD066;
+}
+
+.rating i.fa-regular , span.number{
+    color: rgb(82, 82, 82);
+}
+.select-container{
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* height: 100%; */
+    /* background-color: red; */
+} 
+.select-container .select-box{
+    padding: 11px 25px;
+    border: none;
+    appearance: none;
+    /* padding: 0 30px 0 15px; */
+    color: rgb(255, 255, 255);
+    border: 1px solid var(--main-color);
+    font-size: 15px;
+    border-radius: 20px;
+    border-top-right-radius:0;
+    border-bottom-right-radius:0;
+    cursor: pointer;
+}
+.icon-container{
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.select-container .icon-container i{
+    font-size: 20px;
+    color: #fff;
+    /* padding:0 10px; */
+}
+.row-1  .select-container .select-box{
+    border: 1px solid var(--main-color);
+    /* border-right: none; */
+    background-color: var(--main-color);
+    color: #fff;
+}
+.row-1 .icon-container{
+    right: 10px;
+}
+.select-container .select-box{
+    background-color: white;
+    border: 1px solid red;
+    color: #000;
+}
+
+
+.row-2 .select-container{
+
+}
+.row-2 .select-container .icon-container{
+    left: 10px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.row-2 .select-container .select-box{
+    padding-left: 40px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: var(--main-color);
+    color: #fff;
+}
+

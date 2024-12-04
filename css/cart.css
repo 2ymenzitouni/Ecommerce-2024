@@ -1,0 +1,92 @@
+body{
+    
+}
+.cart-container {
+    background: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 30px 0;
+}
+.product-section, .summary-section {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow-x: scroll;
+}
+.table th, .table td {
+    vertical-align: middle;
+}
+.table th {
+    background-color: #e9ecef;
+    font-weight: bold;
+}
+.checkout-btn {
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+.checkout-btn:hover {
+    background-color: #5a3598;
+}
+.btn-danger {
+    padding: 5px 10px;
+}
+.table-soft th, .table-soft td {
+    border-top: 1px solid #dee2e6;
+}
+.table-soft th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+.coupon-section .btn-primary {
+background-color: var(--main-color);
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+}
+
+.coupon-section .btn-outline-primary {
+color: var(--main-color);
+border: 1px solid var(--main-color);
+padding: 10px 20px;
+border-radius: 5px;
+}
+
+.coupon-section .btn-outline-primary:hover {
+background-color: var(--main-color);
+color: white;
+}
+
+.cart-totals-section {
+padding: 10px;
+background: none;
+}
+
+.cart-totals-section h5 {
+font-size: 20px;
+margin-bottom: 10px;
+}
+
+.cart-totals-section p {
+font-size: 16px;
+margin: 0;
+margin-bottom: 5px;
+}
+
+.cart-totals-section .btn-primary {
+background-color: var(--main-color);
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+}
+
+.cart-totals-section .btn-primary:hover {
+background-color: #5a3598;
+}

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style.css -->
+     <link rel="stylesheet" href="css/style.css">
+    <!-- user.css -->
+    <link rel="stylesheet" href="css/user.css">
+    <!-- generals -->
+    <link rel="stylesheet" href="css/generals.css">
+    <!-- queries -->
+    <link rel="stylesheet" href="css/queries.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+    
+      <title>Document</title>
+</head>
+<body>
+    <!-- ========================header======================== -->
+    <header>
+        <div class="row-1">
+            <div class="logo">Ecommerce <span class="highlight"></span></div>
+            <div class="searchbar">
+                <div class="select-container">
+                    <select class="select-box" name="categories" id="">
+                        <option value="All categories">All Categories</option>
+                        <option value="fashion">fashion</option>
+                        <option value="electronic items">electronic items</option>
+                        <option value="home applicance">home applicance</option>
+                        <option value="kitchen items">kitchen items</option>
+                        <option value="furniture">furniture</option>
+                        <option value="food">food</option>
+                        <option value="gadgets">gadgets</option>
+                        <option value="toys and games">toys and games</option>
+                        <option value="health & beauty">health & beauty</option>
+                    </select>
+                    <div class="icon-container">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+                <input type="text" placeholder="Search for items">
+            </div>
+            <div class="user-exp">
+                <a href="#wishlist"><span>0</span><i class="fa-regular fa-heart"></i></i><div class="under">
+                    <p>Wishlist</p>
+                </div></a>
+                <a href="./cart.html"><span>3</span><i class="fa-solid fa-cart-shopping"></i><div class="under">
+                    <p>Cart</p>
+                </div></a>
+                <a href="./sign-in.html"><i class="fa-regular fa-user"></i><div class="under">
+                    <p>Account</p>
+                </div></a>   
+            </div>
+        </div>
+        <div class="row-2">
+            <div class="select-container">
+                <div class="icon-container" >
+                    <i class="fa-solid fa-list"></i>
+                </div>
+                <select class="select-box" name="categories" id="" >
+                    <option value="All categories">All Categories</option>
+                    <option value="fashion">fashion</option>
+                    <option value="electronic items">electronic items</option>
+                    <option value="home applicance">home applicance</option>
+                    <option value="kitchen items">kitchen items</option>
+                    <option value="furniture">furniture</option>
+                    <option value="food">food</option>
+                    <option value="gadgets">gadgets</option>
+                    <option value="toys and games">toys and games</option>
+                    <option value="health & beauty">health & beauty</option>
+                </select>
+            </div>
+            <ul>
+                <li><a href="#fashion"><i class="fa-solid fa-shirt"></i> Fashion<i class="fa-solid fa-chevron-down"></i></a>
+                    <!-- <div class="child-list">
+                        <ul class="">
+                        <li><a href="#">Itme1</a></li>
+                        <li><a href="#">Item2</a></li>
+                        <li><a href="#">Item3</a></li>
+                        <li><a href="#">Itme4</a></li>
+                    </ul>
+                    </div> -->
+                </li>
+                <li><a href="#electronic item"><i class="fa-solid fa-plug"></i>electronics<i class="fa-solid fa-chevron-down"></i></a></li>
+                <li><a href="#home applicance"><i class="fa-solid fa-blender"></i>home applicance<i class="fa-solid fa-chevron-down"></i></a></li>
+                <li><a href="#kitchen items"><i class="fa-solid fa-kitchen-set"></i>kitchen<i class="fa-solid fa-chevron-down"></i></a></li>
+                <li><a href="#furniture"><i class="fa-solid fa-couch"></i>furniture<i class="fa-solid fa-chevron-down"></i></a></li>
+                <li><a href="#food"><i class="fa-solid fa-burger"></i>food<i class="fa-solid fa-chevron-down"></i></a></li>
+                <li><a href="#gadgets"><i class="fa-solid fa-computer-mouse"></i>gadgets<i class="fa-solid fa-chevron-down"></i></a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- ========================colors======================== -->
+    <div class="colors">
+        <span onclick="color_changer('--main-color','#eab434','#BB4724','#963315','https://i.ibb.co/p0tgXqr/woman1.jpg' ,'#8a6307')"></span>
+        <span onclick="color_changer('--main-color','#F6A7AA','#6f33ab','#4f237a','https://i.ibb.co/pPD1DtH/woman2.jpg','#d4777a')"></span>
+        <span onclick="color_changer('--main-color','#47B9C1','#33AB33','#298D29','https://i.ibb.co/DL8mS0m/woman3.jpg','#40a5aa')"></span>
+    </div>
+
+    <form action=""> 
+        <h3>Sign Up</h3>
+        <div class="name">
+            <div class="firstname">
+
+                    <label for="firstname">
+                        First Name 
+                    </label> <br>
+                    <input type="text"placeholder="Foulen">
+            </div>
+            <div class="lastname">
+                    <label for="lastname">
+                        Last Name
+                    </label> <br>
+                    <input type="text"placeholder="Fouleni">
+            </div>
+        </div>
+        <div class="email">
+            <label for="email">Email</label> <br>
+            <input type="email"placeholder="Foulenfouleni@email.com">
+
+        </div>
+    <div class="gender">
+        <label for="gender">Gender</label> <br>
+        <label>Male</label> 
+        <input type="radio"> 
+        <label>Female</label>
+        <input type="radio">
+    </div>
+
+    <div class="city">
+        <div class="city-name">
+        <label for="city">City</label> <br>
+
+        <input type="text"placeholder="Jerba">
+        </div>
+        <div class="codepostal">
+            <label for="codepostal">Code Postal</label> <br>
+            
+            <input type="text"placeholder="4160">
+        </div>
+    </div>
+
+    <div class="password">
+            <div class="create-password">
+            <label for="create-password">Create Password</label> <br>
+            
+            <input type="password"placeholder="••••••••••••••••">
+            </div>
+            <div class="repeat-password">
+            <div class="repeat-password">
+                <label for="repeat-password">Repeat Password</label> <br>
+                
+                <input type="password"placeholder="••••••••••••••••">
+                </div>
+
+
+    </div> </div>
+
+    <a href="index.html" class="button">Sign Up</a>
+
+    <div class="forgot-password">
+        <span>Already Have An Account? <a href="sign-in.html" class="forgottenpassword">Sign In</a></span>
+    </div>
+
+    </form>
+     <!-- ========================footer======================== -->
+     <footer>
+        <div class="row-1">
+            <div class="col-1 col">
+                <div class="logo"><a href="./index.html"><h3>Ecommerce <span class="highlight"></span></h3></a></div>
+                <p>Pesco is an exciting International brand we provide high quality cloths</p>
+                <p><i class="fa-regular fa-envelope" style="padding-right: 5px;"></i><a href="#mail">info@mydomain.com</a></p>
+                <p><i class="fa-solid fa-phone" style="padding-right: 5px;"></i><a href="#mail">+216-95384168</a></p>
+                <p>find us:
+                    <a href="#fb" style="padding: 0 4px; display: inline-block;"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#insta" style="padding: 0 4px;display: inline-block;"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#in" style="padding: 0 4px;display: inline-block;"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#x" style="padding: 0 4px;display: inline-block;"><i class="fa-brands fa-x-twitter"></i></a>
+                </p>     
+            </div>
+            <div class="col-2 col">
+                <h3>Customer Services</h3>
+                <ul>
+                    <li><a href="#collection">Collections & Delivery</a></li>
+                    <li><a href="#returns">Returns & Refunds</a></li>
+                    <li><a href="#terms">Terms & Conditions</a></li>
+                    <li><a href="#delivery">Delivery Return</a></li>
+                    <li><a href="#locations">Store Locations</a></li>
+                </ul>
+            </div>
+            <div class="col-3 col">
+                <h3>Quick Link</h3>
+                <ul>
+                    <li><a href="#PrivacyPolicy">Privacy Policy</a></li>
+                    <li><a href="#Terms">Terms Of Use</a></li>
+                    <li><a href="#FAQ">FAQ</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <li><a href="#login">Login / Register</a></li>
+                </ul>
+            </div>
+            <div class="col-4 col">  
+                <h3>download our app !</h3>
+                <p>Save 10TND With App & New User only</p>
+                <div class="app">
+                    <div class="qr"><img src="img/qr.png" alt=""></div>
+                    <div class="downloads">
+                        <a href=""><img src="img/app store.png" alt=""></a>
+                        <a href=""><img src="img/play store.webp" alt=""></a>  
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row-2">
+            <p>Ecommerce - This Website is Developed in 2024 <i class="fa-solid fa-heart" style="color: red;padding-left: 10px;"></i></p>
+        </div>
+
+     </footer>
+    <!-- ========================JS======================== -->
+     <script src="js/script.js"></script>
+</body>
+</html>

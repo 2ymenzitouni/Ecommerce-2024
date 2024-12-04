@@ -1,0 +1,70 @@
+form{
+    /* background-color: aliceblue; */
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 50px;
+    border: 1px solid #E5E8EB;
+}
+
+form h3 {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 35px;
+    font-weight:500;
+}
+
+form .name{
+    display: flex;
+    gap: 20px;
+}
+form .name > div{
+    width: 100%;
+}
+
+form .city{
+    display: flex;
+
+gap: 20px;
+}
+form label{
+    padding: 12px 0px 8px 0px;
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+form input{
+    padding: 12px 20px;
+    display: inline-block;
+    width: 100%;
+    outline: none;
+    border: 1px solid #E5E8EB;
+    border-radius: 5px;
+}
+form input[type="radio"]{
+    width:auto;
+}
+.forgot-password{
+    width: 100%;
+    text-align: right;
+    padding: 25px 10px 0 0;
+}
+.forgot-password a{
+    display: inline-block;
+    padding-left: 5px;
+    color: rgb(47, 118, 249);
+}
+form a.button {
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+    margin-top: 20px;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    color: white;
+}

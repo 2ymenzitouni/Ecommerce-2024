@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- generals -->
+    <link rel="stylesheet" href="css/generals.css">
+    <!-- queries -->
+    <link rel="stylesheet" href="css/queries.css">
+    <!-- user -->
+     <link rel="stylesheet" href="css/user.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+    <title>Ecommerce</title>
+</head>
+<body>
+    <!-- ========================header======================== -->
+     <header>
+        <div class="row-1">
+            <div class="logo"><a href="./index.html"><h3>Ecommerce <span class="highlight"></span></h3></a></div>            <div class="searchbar">
+                <div class="select-container">
+                    <select class="select-box" name="categories" id="">
+                        <option value="All categories">All Categories</option>
+                        <option value="fashion">fashion</option>
+                        <option value="electronic items">electronic items</option>
+                        <option value="home applicance">home applicance</option>
+                        <option value="kitchen items">kitchen items</option>
+                        <option value="furniture">furniture</option>
+                        <option value="food">food</option>
+                        <option value="gadgets">gadgets</option>
+                        <option value="toys and games">toys and games</option>
+                        <option value="health & beauty">health & beauty</option>
+                    </select>
+                    <div class="icon-container">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+                <input type="text" placeholder="Search for items">
+            </div>
+            <div class="user-exp">
+                <a href="#wishlist"><span>0</span><i class="fa-regular fa-heart"></i></i><div class="under">
+                    <p>Wishlist</p>
+                </div></a>
+                <a href="./cart.html"><span>3</span><i class="fa-solid fa-cart-shopping"></i><div class="under">
+                    <p>Cart</p>
+                </div></a>
+                <a href="./sign-in.html"><i class="fa-regular fa-user"></i><div class="under">
+                    <p>Account</p>
+                </div></a>   
+            </div>
+        </div>
+        <div class="row-2">
+            <div class="select-container">
+                <div class="icon-container" >
+                    <i class="fa-solid fa-list"></i>
+                </div>
+                <select class="select-box" name="categories" id="" >
+                    <option value="All categories">All Categories</option>
+                    <option value="fashion">fashion</option>
+                    <option value="electronic items">electronic items</option>
+                    <option value="home applicance">home applicance</option>
+                    <option value="kitchen items">kitchen items</option>
+                    <option value="furniture">furniture</option>
+                    <option value="food">food</option>
+                    <option value="gadgets">gadgets</option>
+                    <option value="toys and games">toys and games</option>
+                    <option value="health & beauty">health & beauty</option>
+                </select>
+            </div>
+            <ul>
+                <li><a href="#fashion"><i class="fa-solid fa-shirt"></i> Fashion<i class="fa-solid fa-chevron-down"></i></a>
+                    <!-- <div class="child-list">
+                        <ul class="">
+                        <li><a href="#">Itme1</a></li>
+                        <li><a href="#">Item2</a></li>
+                        <li><a href="#">Item3</a></li>
+                        <li><a href="#">Itme4</a></li>
+                    </ul>
+                    </div> -->
+                </li>
+                <li><a href="#electronic item"><i class="fa-solid fa-plug"></i>electronics<i class="fa-solid fa-chevron-down"></i></a></li>
+                <li><a href="#home applicance"><i class="fa-solid fa-blender"></i>home applicance<i class="fa-solid fa-chevron-down"></i></a></li>
+                <li><a href="#kitchen items"><i class="fa-solid fa-kitchen-set"></i>kitchen<i class="fa-solid fa-chevron-down"></i></a></li>
+                <li><a href="#furniture"><i class="fa-solid fa-couch"></i>furniture<i class="fa-solid fa-chevron-down"></i></a></li>
+                <li><a href="#food"><i class="fa-solid fa-burger"></i>food<i class="fa-solid fa-chevron-down"></i></a></li>
+                <li><a href="#gadgets"><i class="fa-solid fa-computer-mouse"></i>gadgets<i class="fa-solid fa-chevron-down"></i></a></li>
+            </ul>
+        </div>
+     </header>
+    <!-- ========================colors======================== -->
+     <div class="colors">
+        <span onclick="color_changer('--main-color','#eab434','#BB4724','#963315','https://i.ibb.co/p0tgXqr/woman1.jpg' ,'#8a6307')"></span>
+        <span onclick="color_changer('--main-color','#F6A7AA','#6f33ab','#4f237a','https://i.ibb.co/pPD1DtH/woman2.jpg','#d4777a')"></span>
+        <span onclick="color_changer('--main-color','#47B9C1','#33AB33','#298D29','https://i.ibb.co/DL8mS0m/woman3.jpg','#40a5aa')"></span>
+     </div>
+    <!-- ========================home page body======================== -->
+     <div class="main">
+        <div class="landing" id="landing">
+            <div class=pic-text>
+                <p>up to <span class="highlight" style="font-family: tahoma;">70% </span>off on black friday</p>
+                <h1>Trendy fashion <br> collection</h1>
+                <a href="#buy" id="buy">buy now</a>
+            </div>
+        </div>
+        <div class="circles">
+            <div class="circle-1 circle" id="circle">
+                <div class='image'><img src="img/clothes.png" alt=""></div>
+                <p>fashion</p>
+            </div>
+            <div class="circle-2 circle" id="circle">
+                <div class='image'><img src="img/furniture.png" alt=""></div>
+                <p>furniture</p>
+            </div>
+            <div class="circle-3 circle" id="circle">
+                <div class='image'><img src="img/tech.png" alt=""></div>
+                <p>electronic items</p>
+            </div>
+            <div class="circle-4 circle" id="circle">
+                <div class='image'><img src="img/beauty.png" alt=""></div>
+                <p>health and beauty</p>
+            </div>
+            <div class="circle-5 circle" id="circle">
+                <div class='image'><img src="img/toys.png" alt=""></div>
+                <p>toys and games</p>
+            </div>
+        </div>
+        <div class="featured">
+            <h2>Feautured Items<i class="fa-solid fa-tag"></i></h2>
+            <div class="items">
+                <!-- item1 -->
+                <a style="color:black" href="./product-detail.html"><div class="item-1 item">
+                    <div class="image"><img src="img/items/1.jpg"><span class="sale" style="font-family: tahoma;">-50%</span></div>
+                    <p class="name">shirt:Cotton, slim-fit, striped</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span class='number' style="font-family: tahoma;">(620)</span>
+                    </div>
+                    <div class="price">
+                        <p style="font-family: Tahoma;"><span class="after">25.00 TND </span><span class="before">50.00 TND</span></p>
+                    </div>
+                </div></a>
+                <!-- item2 -->
+                <a style="color:black" href="./product-detail.html"><div class="item-1 item">
+                    <div class="image"><img src="img/items/2.jpg"><span class="sale" style="font-family: tahoma;">-30%</span></div>
+                    <p class="name">trendy jacket with a furry hood</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span class='number' style="font-family: tahoma;">(350)</span>
+                    </div>
+                    <div class="price">
+                        <p style="font-family: Tahoma;"><span class="after">66.50 TND </span><span class="before">95.00 TND</span></p>
+                    </div>
+                </div></a>
+                <!-- item3 -->
+                <a style="color:black" href="./product-detail.html"><div class="item-1 item">
+                    <div class="image"><img src="img/items/3.jpg"><span class="sale" style="font-family: tahoma;">-60%</span></div>
+                    <p class="name">blue jean shorts with buttons</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span class='number' style="font-family: tahoma;">(425)</span>
+                    </div>
+                    <div class="price">
+                        <p style="font-family: Tahoma;"><span class="after">24.00 TND </span><span class="before">60.00 TND</span></p>
+                    </div>
+                </div></a>
+                <!-- item4 -->
+                <a style="color:black" href="./product-detail.html"><div class="item-1 item">
+                    <div class="image"><img src="img/items/4.jpg"><span class="sale" style="font-family: tahoma;">-65%</span></div>
+                    <p class="name">cute backpack with straps</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span class='number' style="font-family: tahoma;">(520)</span>
+                    </div>
+                    <div class="price">
+                        <p style="font-family: Tahoma;"><span class="after">42.00 TND </span><span class="before">120.00 TND</span></p>
+                    </div>
+                </div></a>
+                <!-- item5 -->
+                <a style="color:black" href="./product-detail.html"><div class="item-1 item">
+                    <div class="image"><img src="img/items/5.jpg"><span class="sale" style="font-family: tahoma;">-70%</span></div>
+                    <p class="name">a leather ipad cover</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span class='number' style="font-family: tahoma;">(315)</span>
+                    </div>
+                    <div class="price">
+                        <p style="font-family: Tahoma;"><span class="after">15.00 TND </span><span class="before">50.00 TND</span></p>
+                    </div>
+                </div></a>
+                <!-- item6  -->
+                <a style="color:black" href="./product-detail.html"><div class="item-1 item">
+                    <div class="image"><img src="img/items/6.jpg"><span class="sale" style="font-family: tahoma;">-40%</span></div>
+                    <p class="name">a comfy sofa</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span class='number' style="font-family: tahoma;">(175)</span>
+                    </div>
+                    <div class="price">
+                        <p style="font-family: Tahoma;"><span class="after">78.00 TND </span><span class="before">130.00 TND</span></p>
+                    </div>
+                </div></a>
+                <!-- item7 -->
+                <a style="color:black" href="./product-detail.html"><div class="item-1 item">
+                    <div class="image"><img src="img/items/7.jpg"><span class="sale" style="font-family: tahoma;">-45%</span></div>
+                    <p class="name">trendy smart watch</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <span class='number' style="font-family: tahoma;">(365)</span>
+                    </div>
+                    <div class="price">
+                        <p style="font-family: Tahoma;"><span class="after">126.50 TND </span><span class="before">230.00 TND</span></p>
+                    </div>
+                </div></a>
+                <!-- item8 -->
+                <a style="color:black" href="./product-detail.html"><div class="item-1 item">
+                    <div class="image"><img src="img/items/8.jpg"><span class="sale" style="font-family: tahoma;">-70%</span></div>
+                    <p class="name">shirt:Cotton, slim-fit, striped</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span class='number' style="font-family: tahoma;">(784)</span>
+                    </div>
+                    <div class="price">
+                        <p style="font-family: Tahoma;"><span class="after">40.00 TND </span><span class="before">133.30 TND</span></p>
+                    </div>
+                </div></a>
+                <!-- item9 -->
+                <a style="color:black" href="./product-detail.html"><div class="item-1 item">
+                    <div class="image"><img src="img/items/9.jpg"><span class="sale" style="font-family: tahoma;">-30%</span></div>
+                    <p class="name">shirt:Cotton, slim-fit, striped</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span class='number' style="font-family: tahoma;">(184)</span>
+                    </div>
+                    <div class="price">
+                        <p style="font-family: Tahoma;"><span class="after">63.00 TND </span><span class="before">90.00 TND</span></p>
+                    </div>
+                </div></a>
+                <!-- item10 -->
+                <a style="color:black" href="./product-detail.html"><div class="item-1 item">
+                    <div class="image"><img src="img/items/10.jpg"><span class="sale" style="font-family: tahoma;">-50%</span></div>
+                    <p class="name">shirt:Cotton, slim-fit, striped</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span class='number' style="font-family: tahoma;">(125)</span>
+                    </div>
+                    <div class="price">
+                        <p style="font-family: Tahoma;"><span class="after">50.00 TND </span><span class="before">100.00 TND</span></p>
+                    </div>
+                </div></a>
+            </div>
+        </div>
+        <div class="recommended featured">
+            <div class="row-1">
+                <h2>Recommended For you</h2>
+                <ul>
+                    <li><a href="#top10" class="active" id="top10" onclick="clicked_list('top10')">Top 10</a></li>
+                    <li><a href="#men" id="men" onclick="clicked_list('men')">Men</a></li>
+                    <li><a href="#women" id="women" onclick="clicked_list('women')">Women</a></li>
+                    <li><a href="#shoes" id="shoes" onclick="clicked_list('shoes')">Shoes</a></li>
+                    <li><a href="#accessories" id="accessories" onclick="clicked_list('accessories')">Accessories</a></li>
+                </ul>
+            </div>
+            <div class="row-2">
+                <div class="items" id="top10">
+                    <!-- item1 -->
+                    <a style="color:black" href="./product-detail.html"><div class="item-1 item">
+                        <div class="image"><img src="img/items/1.jpg"><span class="sale" style="font-family: tahoma;">-50%</span></div>
+                        <p class="name">shirt:Cotton, slim-fit, striped</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class='number' style="font-family: tahoma;">(620)</span>
+                        </div>
+                        <div class="price">
+                            <p style="font-family: Tahoma;"><span class="after">25.00 TND </span><span class="before">50.00 TND</span></p>
+                        </div>
+                    </div></a>
+                    <!-- item2 -->
+                    <a style="color:black" href="./product-detail.html"><div class="item-1 item">
+                        <div class="image"><img src="img/items/2.jpg"><span class="sale" style="font-family: tahoma;">-30%</span></div>
+                        <p class="name">trendy jacket with a furry hood</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class='number' style="font-family: tahoma;">(350)</span>
+                        </div>
+                        <div class="price">
+                            <p style="font-family: Tahoma;"><span class="after">66.50 TND </span><span class="before">95.00 TND</span></p>
+                        </div>
+                    </div></a>
+                    <!-- item3 -->
+                    <a style="color:black" href="./product-detail.html"><div class="item-1 item">
+                        <div class="image"><img src="img/items/3.jpg"><span class="sale" style="font-family: tahoma;">-60%</span></div>
+                        <p class="name">blue jean shorts with buttons</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class='number' style="font-family: tahoma;">(425)</span>
+                        </div>
+                        <div class="price">
+                            <p style="font-family: Tahoma;"><span class="after">24.00 TND </span><span class="before">60.00 TND</span></p>
+                        </div>
+                    </div></a>
+                    <!-- item4 -->
+                    <a style="color:black" href="./product-detail.html"><div class="item-1 item">
+                        <div class="image"><img src="img/items/4.jpg"><span class="sale" style="font-family: tahoma;">-65%</span></div>
+                        <p class="name">cute backpack with straps</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span class='number' style="font-family: tahoma;">(520)</span>
+                        </div>
+                        <div class="price">
+                            <p style="font-family: Tahoma;"><span class="after">42.00 TND </span><span class="before">120.00 TND</span></p>
+                        </div>
+                    </div></a>
+                </div>
+                <div class="items" id="men" style="display: none;">
+                    <!-- item1 -->
+                    <a style="color:black" href="./product-detail.html"><div class="item-1 item">
+                        <div class="image"><img src="img/items/1.jpg"><span class="sale" style="font-family: tahoma;">-50%</span></div>
+                        <p class="name">shirt:Cotton, slim-fit, striped</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class='number' style="font-family: tahoma;">(620)</span>
+                        </div>
+                        <div class="price">
+                            <p style="font-family: Tahoma;"><span class="after">25.00 TND </span><span class="before">50.00 TND</span></p>
+                        </div>
+                    </div></a>
+                    <!-- item2 -->
+                    <a style="color:black" href="./product-detail.html"><div class="item-1 item">
+                        <div class="image"><img src="img/items/2.jpg"><span class="sale" style="font-family: tahoma;">-30%</span></div>
+                        <p class="name">trendy jacket with a furry hood</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class='number' style="font-family: tahoma;">(350)</span>
+                        </div>
+                        <div class="price">
+                            <p style="font-family: Tahoma;"><span class="after">66.50 TND </span><span class="before">95.00 TND</span></p>
+                        </div>
+                    </div></a>
+                    <!-- item3 -->
+                    <a style="color:black" href="./product-detail.html"><div class="item-1 item">
+                        <div class="image"><img src="img/items/3.jpg"><span class="sale" style="font-family: tahoma;">-60%</span></div>
+                        <p class="name">blue jean shorts with buttons</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class='number' style="font-family: tahoma;">(425)</span>
+                        </div>
+                        <div class="price">
+                            <p style="font-family: Tahoma;"><span class="after">24.00 TND </span><span class="before">60.00 TND</span></p>
+                        </div>
+                    </div></a>
+                    <!-- item4 -->
+                    <a style="color:black" href="./product-detail.html"><div class="item-1 item">
+                        <div class="image"><img src="img/items/4.jpg"><span class="sale" style="font-family: tahoma;">-65%</span></div>
+                        <p class="name">cute backpack with straps</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span class='number' style="font-family: tahoma;">(520)</span>
+                        </div>
+                        <div class="price">
+                            <p style="font-family: Tahoma;"><span class="after">42.00 TND </span><span class="before">120.00 TND</span></p>
+                        </div>
+                    </div></a>
+                </div>
+                <div class="items" id="women" style="display: none;">
+                    <!-- item1 -->
+                    <a style="color:black" href="./product-detail.html"><div class="item-1 item">
+                        <div class="image"><img src="img/items/5.jpg"><span class="sale" style="font-family: tahoma;">-50%</span></div>
+                        <p class="name">shirt:Cotton, slim-fit, striped</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class='number' style="font-family: tahoma;">(620)</span>
+                        </div>
+                        <div class="price">
+                            <p style="font-family: Tahoma;"><span class="after">25.00 TND </span><span class="before">50.00 TND</span></p>
+                        </div>
+                    </div></a>
+                    <!-- item2 -->
+                    <a style="color:black" href="./product-detail.html"><div class="item-1 item">
+                        <div class="image"><img src="img/items/6.jpg"><span class="sale" style="font-family: tahoma;">-30%</span></div>
+                        <p class="name">trendy jacket with a furry hood</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class='number' style="font-family: tahoma;">(350)</span>
+                        </div>
+                        <div class="price">
+                            <p style="font-family: Tahoma;"><span class="after">66.50 TND </span><span class="before">95.00 TND</span></p>
+                        </div>
+                    </div></a>
+                    <!-- item3 -->
+                    <a style="color:black" href="./product-detail.html"><div class="item-1 item">
+                        <div class="image"><img src="img/items/7.jpg"><span class="sale" style="font-family: tahoma;">-60%</span></div>
+                        <p class="name">blue jean shorts with buttons</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class='number' style="font-family: tahoma;">(425)</span>
+                        </div>
+                        <div class="price">
+                            <p style="font-family: Tahoma;"><span class="after">24.00 TND </span><span class="before">60.00 TND</span></p>
+                        </div>
+                    </div></a>
+                    <!-- item4 -->
+                    <a style="color:black" href="./product-detail.html"><div class="item-1 item">
+                        <div class="image"><img src="img/items/8.jpg"><span class="sale" style="font-family: tahoma;">-65%</span></div>
+                        <p class="name">cute backpack with straps</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span class='number' style="font-family: tahoma;">(520)</span>
+                        </div>
+                        <div class="price">
+                            <p style="font-family: Tahoma;"><span class="after">42.00 TND </span><span class="before">120.00 TND</span></p>
+                        </div>
+                    </div></a>
+                </div>
+                <div class="items" id="shoes" style="display: none;">
+                    <!-- item1 -->
+                    <a style="color:black" href="./product-detail.html"><div class="item-1 item">
+                        <div class="image"><img src="img/items/1.jpg"><span class="sale" style="font-family: tahoma;">-50%</span></div>
+                        <p class="name">shirt:Cotton, slim-fit, striped</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class='number' style="font-family: tahoma;">(620)</span>
+                        </div>
+                        <div class="price">
+                            <p style="font-family: Tahoma;"><span class="after">25.00 TND </span><span class="before">50.00 TND</span></p>
+                        </div>
+                    </div></a>
+                    <!-- item2 -->
+                    <a style="color:black" href="./product-detail.html"><div class="item-1 item">
+                        <div class="image"><img src="img/items/2.jpg"><span class="sale" style="font-family: tahoma;">-30%</span></div>
+                        <p class="name">trendy jacket with a furry hood</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class='number' style="font-family: tahoma;">(350)</span>
+                        </div>
+                        <div class="price">
+                            <p style="font-family: Tahoma;"><span class="after">66.50 TND </span><span class="before">95.00 TND</span></p>
+                        </div>
+                    </div></a>
+                    <!-- item3 -->
+                    <a style="color:black" href="./product-detail.html"><div class="item-1 item">
+                        <div class="image"><img src="img/items/3.jpg"><span class="sale" style="font-family: tahoma;">-60%</span></div>
+                        <p class="name">blue jean shorts with buttons</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class='number' style="font-family: tahoma;">(425)</span>
+                        </div>
+                        <div class="price">
+                            <p style="font-family: Tahoma;"><span class="after">24.00 TND </span><span class="before">60.00 TND</span></p>
+                        </div>
+                    </div></a>
+                    <!-- item4 -->
+                    <a style="color:black" href="./product-detail.html"><div class="item-1 item">
+                        <div class="image"><img src="img/items/4.jpg"><span class="sale" style="font-family: tahoma;">-65%</span></div>
+                        <p class="name">cute backpack with straps</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span class='number' style="font-family: tahoma;">(520)</span>
+                        </div>
+                        <div class="price">
+                            <p style="font-family: Tahoma;"><span class="after">42.00 TND </span><span class="before">120.00 TND</span></p>
+                        </div>
+                    </div></a>
+                </div>
+                <div class="items" id="accessories" style="display: none;">
+                    <!-- item1 -->
+                    <a style="color:black" href="./product-detail.html"><div class="item-1 item">
+                        <div class="image"><img src="img/items/1.jpg"><span class="sale" style="font-family: tahoma;">-50%</span></div>
+                        <p class="name">shirt:Cotton, slim-fit, striped</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class='number' style="font-family: tahoma;">(620)</span>
+                        </div>
+                        <div class="price">
+                            <p style="font-family: Tahoma;"><span class="after">25.00 TND </span><span class="before">50.00 TND</span></p>
+                        </div>
+                    </div></a>
+                    <!-- item2 -->
+                    <a style="color:black" href="./product-detail.html"><div class="item-1 item">
+                        <div class="image"><img src="img/items/2.jpg"><span class="sale" style="font-family: tahoma;">-30%</span></div>
+                        <p class="name">trendy jacket with a furry hood</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class='number' style="font-family: tahoma;">(350)</span>
+                        </div>
+                        <div class="price">
+                            <p style="font-family: Tahoma;"><span class="after">66.50 TND </span><span class="before">95.00 TND</span></p>
+                        </div>
+                    </div></a>
+                    <!-- item3 -->
+                    <a style="color:black" href="./product-detail.html"><div class="item-1 item">
+                        <div class="image"><img src="img/items/3.jpg"><span class="sale" style="font-family: tahoma;">-60%</span></div>
+                        <p class="name">blue jean shorts with buttons</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class='number' style="font-family: tahoma;">(425)</span>
+                        </div>
+                        <div class="price">
+                            <p style="font-family: Tahoma;"><span class="after">24.00 TND </span><span class="before">60.00 TND</span></p>
+                        </div>
+                    </div></a>
+                    <!-- item4 -->
+                    <a style="color:black" href="./product-detail.html"><div class="item-1 item">
+                        <div class="image"><img src="img/items/4.jpg"><span class="sale" style="font-family: tahoma;">-65%</span></div>
+                        <p class="name">cute backpack with straps</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span class='number' style="font-family: tahoma;">(520)</span>
+                        </div>
+                        <div class="price">
+                            <p style="font-family: Tahoma;"><span class="after">42.00 TND </span><span class="before">120.00 TND</span></p>
+                        </div>
+                    </div></a>
+                </div>                
+            </div>
+        </div>
+    <!-- deal -->
+        <div class="deal">
+            <div class="row-1">
+                <div class="col-1">
+                    <img src="img/items/1.jpg" alt="">
+                </div>
+                <div class="col-2">
+                    <h2>Deal Of The Day</h2>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Shampoo, conditioner & facewash packs</h3>
+                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, consequuntur deserunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, consequuntur deserunt.</p>
+                        <div class="price">
+                            <span class="new">$150</span>
+                            <span class="before">$200</span>
+                        </div>
+                        <a href="./cart.html">Add To Cart</a>
+                        <p class="offer">Hurry Up! Offer ends in:</p>
+                        <div class="date">
+                            <span>
+                                <p>360</p>
+                                <p>Days</p>
+                            </span>
+                            <span>
+                                <p>24</p>
+                                <p>Hours</p>
+                            </span>
+                            <span>
+                                <p>59</p>
+                                <p>Min</p>
+                            </span>
+                            <span>
+                                <p>00</p>
+                                <p>Sec</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    <!-- partners -->
+     <div class="partners">
+        <h2>Partners</h2>
+        <div class="images">
+            <img src="img/paypal.png" alt="">
+            <img src="img/master-card.png" alt="">
+            <img src="img/western-union.png" alt="">
+            <img src="img/webmoney.png" alt="">
+        </div>
+     </div>
+     </div>
+    <!-- ========================services======================== -->
+     <div class="services">
+        <div class="shipping box">
+            <i class="fa-solid fa-truck-fast"></i>
+            <div class="inforamtion">
+                <h3>quick shipping</h3>
+                <h5>You get your items delivered within <span style="font-family: tahoma;">48h</span></h5>
+            </div>
+        </div>
+        <div class="return box">
+            <i class="fa-regular fa-handshake"></i>
+            <div class="inforamtion">
+                <h3>Return Available</h3>
+                <h5>Making it easy to return any items if you're not satisfied</h5>
+            </div>
+        </div>
+        <div class="support box">
+            <i class="fa-solid fa-microphone"></i>
+            <div class="information">
+                <h3>Great Support <span style="font-family: tahoma;">24/7</span></h3>
+                <h5>Our customer support team is available around the clock</h5>    
+            </div>
+        </div>
+        <div class="payement box">
+            <i class="fa-solid fa-sack-dollar"></i>
+            <div class="information">
+                <h3>Secure Payment</h3>
+                <h5>Shop with confidence and security</h5>
+            </div>
+        </div>
+     </div>
+    <!-- ========================footer======================== -->
+     <footer>
+        <div class="row-1">
+            <div class="col-1 col">
+                <div class="logo"><a href="./index.html"><h3>Ecommerce <span class="highlight"></span></h3></a></div>                <p>Pesco is an exciting International brand we provide high quality cloths</p>
+                <p><i class="fa-regular fa-envelope" style="padding-right: 5px;"></i><a href="#mail">info@mydomain.com</a></p>
+                <p><i class="fa-solid fa-phone" style="padding-right: 5px;"></i><a href="#mail">+216-95384168</a></p>
+                <p>find us:
+                    <a href="#fb" style="padding: 0 4px; display: inline-block;"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#insta" style="padding: 0 4px;display: inline-block;"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#in" style="padding: 0 4px;display: inline-block;"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#x" style="padding: 0 4px;display: inline-block;"><i class="fa-brands fa-x-twitter"></i></a>
+                </p>     
+            </div>
+            <div class="col-2 col">
+                <h3>Customer Services</h3>
+                <ul>
+                    <li><a href="#collection">Collections & Delivery</a></li>
+                    <li><a href="#returns">Returns & Refunds</a></li>
+                    <li><a href="#terms">Terms & Conditions</a></li>
+                    <li><a href="#delivery">Delivery Return</a></li>
+                    <li><a href="#locations">Store Locations</a></li>
+                </ul>
+            </div>
+            <div class="col-3 col">
+                <h3>Quick Link</h3>
+                <ul>
+                    <li><a href="#PrivacyPolicy">Privacy Policy</a></li>
+                    <li><a href="#Terms">Terms Of Use</a></li>
+                    <li><a href="#FAQ">FAQ</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <li><a href="#login">Login / Register</a></li>
+                </ul>
+            </div>
+            <div class="col-4 col">  
+                <h3>download our app !</h3>
+                <p>Save 10TND With App & New User only</p>
+                <div class="app">
+                    <div class="qr"><img src="img/qr.png" alt=""></div>
+                    <div class="downloads">
+                        <a href=""><img src="img/app store.png" alt=""></a>
+                        <a href=""><img src="img/play store.webp" alt=""></a>  
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row-2">
+            <p>Ecommerce - This Website is Developed in 2024 <i class="fa-solid fa-heart" style="color: red;padding-left: 10px;"></i></p>
+        </div>
+
+     </footer>
+    <!-- ========================JS======================== -->
+     <script src="js/script.js"></script>
+</body>
+</html>

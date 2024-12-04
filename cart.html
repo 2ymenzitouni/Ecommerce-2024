@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- style -->
+     <link rel="stylesheet" href="css/style.css">
+    <!-- cart -->
+    <link rel="stylesheet" href="css/cart.css">
+    <!-- generals -->
+     <link rel="stylesheet" href="css/generals.css">
+    <!-- footer-no-bootstrap -->
+    <link rel="stylesheet" href="css/footer-no-bootrstrap.css">
+    <!-- header-no-bootstrap -->
+    <link rel="stylesheet" href="css/header-no-bootstrap.css">
+     <!-- fontawseome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+    <!-- queries -->
+     <link rel="stylesheet" href="css/queries.css">
+     <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+    <style>
+        .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+        all: unset;
+        }
+    </style>
+    <title>Shopping Cart</title>    
+
+</head>
+<body>
+<!-- ========================header======================== -->
+<header>
+    <div class="row-1">
+        <div class="logo"><a href="./index.html"><h3>Ecommerce <span class="highlight"></span></h3></a></div>        <div class="searchbar">
+            <div class="select-container">
+                <select class="select-box" name="categories" id="">
+                    <option value="All categories">All Categories</option>
+                    <option value="fashion">fashion</option>
+                    <option value="electronic items">electronic items</option>
+                    <option value="home applicance">home applicance</option>
+                    <option value="kitchen items">kitchen items</option>
+                    <option value="furniture">furniture</option>
+                    <option value="food">food</option>
+                    <option value="gadgets">gadgets</option>
+                    <option value="toys and games">toys and games</option>
+                    <option value="health & beauty">health & beauty</option>
+                </select>
+                <div class="icon-container">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </div>
+            <input type="text" placeholder="Search for items">
+        </div>
+        <div class="user-exp">
+            <a href="#wishlist"><span>0</span><i class="fa-regular fa-heart"></i></i><div class="under">
+                <p>Wishlist</p>
+            </div></a>
+            <a href="./cart.html"><span>3</span><i class="fa-solid fa-cart-shopping"></i><div class="under">
+                <p>Cart</p>
+            </div></a>
+            <a href="./sign-in.html"><i class="fa-regular fa-user"></i><div class="under">
+                <p>Account</p>
+            </div></a>   
+        </div>
+    </div>
+    <div class="row-2">
+        <div class="select-container">
+            <div class="icon-container" >
+                <i class="fa-solid fa-list"></i>
+            </div>
+            <select class="select-box" name="categories" id="" >
+                <option value="All categories">All Categories</option>
+                <option value="fashion">fashion</option>
+                <option value="electronic items">electronic items</option>
+                <option value="home applicance">home applicance</option>
+                <option value="kitchen items">kitchen items</option>
+                <option value="furniture">furniture</option>
+                <option value="food">food</option>
+                <option value="gadgets">gadgets</option>
+                <option value="toys and games">toys and games</option>
+                <option value="health & beauty">health & beauty</option>
+            </select>
+        </div>
+        <ul>
+            <li><a href="#fashion"><i class="fa-solid fa-shirt"></i> Fashion<i class="fa-solid fa-chevron-down"></i></a>
+                <!-- <div class="child-list">
+                    <ul class="">
+                    <li><a href="#">Itme1</a></li>
+                    <li><a href="#">Item2</a></li>
+                    <li><a href="#">Item3</a></li>
+                    <li><a href="#">Itme4</a></li>
+                </ul>
+                </div> -->
+            </li>
+            <li><a href="#electronic item"><i class="fa-solid fa-plug"></i>electronics<i class="fa-solid fa-chevron-down"></i></a></li>
+            <li><a href="#home applicance"><i class="fa-solid fa-blender"></i>home applicance<i class="fa-solid fa-chevron-down"></i></a></li>
+            <li><a href="#kitchen items"><i class="fa-solid fa-kitchen-set"></i>kitchen<i class="fa-solid fa-chevron-down"></i></a></li>
+            <li><a href="#furniture"><i class="fa-solid fa-couch"></i>furniture<i class="fa-solid fa-chevron-down"></i></a></li>
+            <li><a href="#food"><i class="fa-solid fa-burger"></i>food<i class="fa-solid fa-chevron-down"></i></a></li>
+        </ul>
+    </div>
+</header>
+<!-- ========================colors======================== -->
+<div class="colors">
+    <span onclick="color_changer('--main-color','#eab434','#BB4724','#963315','https://i.ibb.co/p0tgXqr/woman1.jpg' ,'#8a6307')"></span>
+    <span onclick="color_changer('--main-color','#F6A7AA','#6f33ab','#4f237a','https://i.ibb.co/pPD1DtH/woman2.jpg','#d4777a')"></span>
+    <span onclick="color_changer('--main-color','#47B9C1','#33AB33','#298D29','https://i.ibb.co/DL8mS0m/woman3.jpg','#40a5aa')"></span>
+</div>
+<div class="container">
+    <div class="cart-container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="product-section">
+                    <table class="table table-bordered align-middle">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Camera Canon EOS M50 Kit</strong><br>
+                                    <small>Meta: 25 MP<br>Brand: Canon</small>
+                                </td>
+                                <td>
+                                    <input type="number" value="1" class="form-control" style="width: 70px;">
+                                </td>
+                                <td>1156.00 TND</td>
+                                <td><button class="btn btn-danger">Remove</button></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>ADATA Premier ONE microSDXC</strong><br>
+                                    <small>Size: 256 GB<br>Brand: ADATA</small>
+                                </td>
+                                <td>
+                                    <input type="number" value="1" class="form-control" style="width: 70px;">
+                                </td>
+                                <td>149.97 TND</td>
+                                <td><button class="btn btn-danger">Remove</button></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Logitech headset for gaming</strong><br>
+                                    <small>Vendor: G433-DT4TE<br>Brand: Sony</small>
+                                </td>
+                                <td>
+                                    <input type="number" value="1" class="form-control" style="width: 70px;">
+                                </td>
+                                <td>80.00 TND</td>
+                                <td><button class="btn btn-danger">Remove</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="summary-section">
+                    <h5>Order Summary</h5>
+                    <div class="total-summary">
+                        <p>Total Price: 89.97 TND</p>
+                        <p>Tax: 10.00 TND</p>
+                        <p><strong>Total: 59.97 TND</strong></p>
+                    </div>
+                    <a href="./checkout.html"><button class="checkout-btn">Checkout</button></a>
+                    <button class="btn btn-outline-secondary w-100">Continue Shopping</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-4"></div>
+        <div class="row">
+            <div class="col-lg-12" style="overflow-x: scroll;">
+                <table class="table table-soft align-middle">
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="img/items/1.jpg" style="width: 80px;" alt="Top Up T-Shirt"></td>
+                            <td>Top Up T-Shirt</td>
+                            <td>49.00 TND</td>
+                            <td>
+                                <input type="number" value="1" class="form-control" style="width: 70px;">
+                            </td>
+                            <td>49.00 TND</td>
+                            <td><button class="btn btn-danger">X</button></td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/items/1.jpg" style="width: 80px;" alt="Polo Shirt"></td>
+                            <td>Polo Shirt</td>
+                            <td>49.00 TND</td>
+                            <td>
+                                <input type="number" value="1" class="form-control" style="width: 70px;">
+                            </td>
+                            <td>49.00 TND</td>
+                            <td><button class="btn btn-danger">X</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+<div class="row mt-4">
+    <div class="col-lg-6">
+        <div class="coupon-section">
+            <button class="btn btn-primary me-2">Update Cart</button>
+            <button class="btn btn-outline-primary">Continue Shopping</button>
+            <div class="mt-4">
+                <label for="couponCode" class="form-label"><strong>Coupon</strong></label>
+                <p>Enter your coupon code if you have one.</p>
+                <div class="d-flex">
+                    <input type="text" id="couponCode" class="form-control me-2" placeholder="Coupon Code">
+                    <button class="btn btn-primary">Apply Coupon</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="col-lg-6">
+            <div class="cart-totals-section text-end">
+                <h5><strong>Cart Totals</strong></h5>
+                <div class="mt-2">
+                    <p>Subtotal: <strong>230.00 TND</strong></p>
+                    <p>Total: <strong>230.00 TND</strong></p>
+                </div>
+                <a href="./checkout.html"><button class="btn btn-primary">Proceed to Checkout</button></a>
+            </div>
+        </div>
+    </div>
+    
+
+</div>
+    <!-- ========================footer======================== -->
+    <footer>
+        <div class="roww-1">
+            <div class="column-1 col">
+                <div class="logo"><h3>Ecommerce <span class="highlight"></span></h3></div>
+                <p>Pesco is an exciting International brand we provide high quality cloths</p>
+                <p><i class="fa-regular fa-envelope" style="padding-right: 5px;"></i><a href="#mail">info@mydomain.com</a></p>
+                <p><i class="fa-solid fa-phone" style="padding-right: 5px;"></i><a href="#mail">+216-95384168</a></p>
+                <p>find us:
+                    <a href="#fb" style="padding: 0 4px; display: inline-block;"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#insta" style="padding: 0 4px;display: inline-block;"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#in" style="padding: 0 4px;display: inline-block;"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#x" style="padding: 0 4px;display: inline-block;"><i class="fa-brands fa-x-twitter"></i></a>
+                </p>     
+            </div>
+            <div class="column-2 col">
+                <h3>Customer Services</h3>
+                <ul>
+                    <li><a href="#collection">Collections & Delivery</a></li>
+                    <li><a href="#returns">Returns & Refunds</a></li>
+                    <li><a href="#terms">Terms & Conditions</a></li>
+                    <li><a href="#delivery">Delivery Return</a></li>
+                    <li><a href="#locations">Store Locations</a></li>
+                </ul>
+            </div>
+            <div class="column-3 col">
+                <h3>Quick Link</h3>
+                <ul>
+                    <li><a href="#PrivacyPolicy">Privacy Policy</a></li>
+                    <li><a href="#Terms">Terms Of Use</a></li>
+                    <li><a href="#FAQ">FAQ</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <li><a href="#login">Login / Register</a></li>
+                </ul>
+            </div>
+            <div class="column-4 col">  
+                <h3>download our app !</h3>
+                <p>Save 10TND With App & New User only</p>
+                <div class="app">
+                    <div class="qr"><img src="img/qr.png" alt=""></div>
+                    <div class="downloads">
+                        <a href=""><img src="img/app store.png" alt=""></a>
+                        <a href=""><img src="img/play store.webp" alt=""></a>  
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="roww-2">
+            <p>Ecommerce - This Website is Developed in 2024 <i class="fa-solid fa-heart" style="color: red;padding-left: 10px;"></i></p>
+        </div>
+
+    </footer>
+<!-- ========================JS======================== -->
+ <script src="js/script.js"></script>
+</body>
+</html>
+

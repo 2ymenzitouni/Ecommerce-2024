@@ -1,0 +1,197 @@
+body{
+    font-family:"Parkinsans",'cocomat' !important; 
+}
+.review { 
+}
+
+.review .row1{
+    display: flex;
+    gap: 0 30px;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 50px;
+}
+
+.grid-container{
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 5px 10px var(--box-shadow);
+    border-radius: 20px;
+    /* background-color: #fff; */
+    flex: 1;
+}
+a.button{
+    text-align: center;
+    background-color: var(--main-color);
+    padding: 10px 20px ;
+    border-radius: 30px;
+    color: #fff;
+    display: inline-block;
+}
+
+
+.review .row1 .grid-container .items {
+    width: 53vw; 
+    display: grid;
+    gap: 10px; 
+    grid-template-columns: auto auto;
+}
+.grid-container .item{
+    display:flex  ;
+    padding:  10px 20px;
+    border: 1px solid var(--border-bottom);
+    border-radius: 20px;
+    /* background-color: #fff; */
+}
+
+.grid-container .item .image{
+    height: 100px;
+}
+
+.grid-container .item .image img{
+    height: 100%;
+}
+.review .row1 .card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px 60px 30px 30px;
+    box-shadow: 0 4px 80px rgba(0, 0, 0, 0.1);
+    /* width: 70vw ; */
+}
+.review .row1 .card .items{
+    display: flex;
+    flex-direction: column;
+
+}
+.review .row1 .card img{
+    align-content: center;
+    width:100px;
+}
+.contact .information{
+    display: grid ;
+    grid-template-columns: auto auto;
+}
+.review .row1 .card img{
+    width: 200px;
+    align-content: center;
+}
+.contact {
+    margin: 30px 40px 30px 30px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px 60px 30px 30px;
+    box-shadow: 0 4px 80px rgba(0, 0, 0, 0.1);
+}
+.contact .grid{
+    background-color: white;
+    width: 55vw;
+    padding:1vw ;
+}
+
+.contact .grid .items {
+    display:grid;
+    grid-template-columns: auto auto;
+
+}
+.contact .grid .items .information .box input{
+    width: 26vw;
+    height: 30px;
+    gap: 20px;
+}
+
+label{
+    display: inline-block;
+    padding: 8px 0;
+}
+.delivery{
+    margin: 30px 40px 30px 30px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px 60px 40px 30px;
+    box-shadow: 0 4px 80px rgba(0, 0, 0, 0.1);
+
+}
+.delivery .card{
+    background-color: white;
+    width: 55vw;
+    padding: 1vw;
+    /* height: 300px; */
+
+}
+.delivery .card  .items .country #c{
+    width: auto;
+    height: 30px;
+    width: 100%;
+}
+.delivery .card .items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.delivery .card .items input {
+    width:100%; 
+    gap: 10px;  
+    height:30px;
+    
+}
+.delivery .card .items select{
+    width:70px;
+
+}
+.delivery .card .items .postal input{
+    width:30vw;
+}
+.delivery .card .items .zip input{
+    width:18vw;
+}
+.delivery .card .items .House input{
+    width:22vw;
+}
+.pay1{
+    margin: 30px 40px 30px 30px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px 60px 30px 30px;
+    box-shadow: 0 4px 80px rgba(0, 0, 0, 0.1);
+    
+}
+.pay1 .pay{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 0 50px;
+}
+.pay1 .pay .method{
+    height: 150px;
+    /* background-color: red; */
+}
+.pay1 .pay .method input{
+    margin-top: 10px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+.button a.button{
+    width: 150px;
+}
+@media only screen and (max-width:900px) {
+    .review .row1{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+@media only screen and (max-width:565px) {
+    .review .row1 .grid-container .items{
+        grid-template-columns: auto;
+        /* justify-content: center; */
+    }
+}
+input{
+    padding: 18px;
+    display: inline-block;
+    width: 100%;
+    outline: none;
+    border: 1px solid #E5E8EB;
+    border-radius: 5px;
+}
